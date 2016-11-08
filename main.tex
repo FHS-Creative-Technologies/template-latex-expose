@@ -1,0 +1,97 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[includeheadfoot,margin=2.5cm]{geometry}
+
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\usepackage{csquotes}
+\usepackage{abbrevs}
+\usepackage[authordate,bibencoding=auto,strict,noibid,backend=biber]{biblatex-chicago}
+\bibliography{Bibliography}
+
+% change language settings here "ngerman", "english"
+\usepackage[english,ngerman]{babel}
+
+\include{_Configuration}
+
+\title{\titlename}
+
+\author{ \authorname\\ \scriptsize \authormail \\ \scriptsize \address }
+
+\date{\exposedate}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Concept}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua \autocite[]{McConnell:2004:CCS:1096143}.
+
+\textcite[]{Vandevoorde:2002} defined at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+If you mention Web pages that are not proper scientific sources, just put the URL in a footnote, e.g. documentation for \LaTeX\footnote{\url{http://en.wikibooks.org/wiki/LaTeX}}
+or when refering to an online service like  sharelatex\footnote{\url{https://de.sharelatex.com/}}.
+
+
+% Wörtliches Zitat:
+% select proper language!
+% \selectlanguage{ngerman}
+\selectlanguage{english}
+\begin{quote}
+``Erwin Unruh discovered that templates can be used to compute
+something at compile time. [...] The intriguing part of this exercise, however, was that the production of the prime numbers was performed by the compiler during the compilation process and not at run time.''
+\autocite[305]{Vandevoorde:2002}
+\end{quote}
+%select English again
+\selectlanguage{english}
+
+\textcite[]{Vandevoorde:2002} first introduced Lorem ipsum, and definined it as dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet 
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Different methods have been applied to solve this particular problem \autocite[]{McConnell:2004:CCS:1096143,Vandevoorde:2002}. 
+
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet .
+
+
+
+\section*{Outline}
+
+\begin{enumerate}
+	\item Introduction
+	\item Chapter
+	\begin{enumerate}
+		\item Subchapter
+		\item Subchapter
+	\end{enumerate}
+	\item Other Chapter
+	\item Conclusions
+\end{enumerate}
+
+% nocite print the whole bibliography. Remove nocite to
+% print only the cited references.
+\nocite{*}
+\printbibliography
+
+% section* means that there will be no section numbering
+\section*{Schedule}
+
+\begin{itemize}
+	\item December 14th - hand in this exposé
+	\item ... procrastinate, procrastinate, procrastinate ....
+	\item April 16th - quickly scan my few sources and cobble something together
+	\item April 17th - submission
+\end{itemize}
+
+\section*{Supervisor}
+
+Have you discussed this exposé with a potential supervisor?
+What is the status?
+
+
+
+
+
+
+\end{document}
